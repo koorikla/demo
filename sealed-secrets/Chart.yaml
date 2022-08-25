@@ -1,0 +1,12 @@
+apiVersion: v2
+name: sealed-secrets
+description: A dependency chart for managing sealed-secrets controller - https://github.com/external-secrets/kubernetes-external-secrets
+
+type: application
+version: 2.6.0
+appVersion: "2.6.0"
+
+dependencies:
+- name: sealed-secrets
+  version: 2.6.0
+  repository: https://bitnami-labs.github.io/sealed-secrets

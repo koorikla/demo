@@ -1,0 +1,6 @@
+sealed-secrets:
+  fullnameOverride: sealed-secrets-controller
+  #secretName: "acme-keys" # Can be used to pre-generate initial TLS keys, when left blank on new installation generates new key
+  image:
+    registry: docker.io
+    repository: bitnami/sealed-secrets-controller
