@@ -15,6 +15,10 @@ k9s (reccomended) - https://github.com/derailed/k9s
 
 
 ##
+https://www.gitops.tech/
+
+https://argoproj.github.io/
+
 https://kind.sigs.k8s.io/docs/user/ingress/
 
 https://github.com/argoproj/argo-helm
