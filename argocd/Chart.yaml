@@ -1,0 +1,12 @@
+apiVersion: v2
+name: argo-cd
+description: A nested chart for managing argocd
+
+type: application
+version: 4.9.11-demo
+appVersion: "4.9.11"
+
+dependencies:
+- name: argo-cd
+  version: 5.3.0
+  repository: https://argoproj.github.io/argo-helm

@@ -1,0 +1,10 @@
+
+
+argo-cd:
+  server:
+    ingress:
+      enabled: true
+      hosts:
+        - argocd.localhost
+      paths:
+        - /
