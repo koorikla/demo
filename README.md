@@ -21,3 +21,4 @@ https://github.com/argoproj/argo-helm
 
 https://github.com/bitnami-labs/sealed-secrets#installation
 
+https://github.com/argoproj/argocd-example-apps/tree/master/helm-dependency
