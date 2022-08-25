@@ -19,6 +19,13 @@ items:
   metadata:
     name: infra
     namespace: argocd
+  spec:
+    destinations:
+    - name: '*'
+      namespace: '*'
+      server: '*'
+    sourceRepos:
+    - '*'
 kind: List
 metadata:
   resourceVersion: ""
