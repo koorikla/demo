@@ -3,6 +3,8 @@ items:
 - apiVersion: argoproj.io/v1alpha1
   kind: AppProject
   metadata:
+    labels:
+      argocd.argoproj.io/instance: argocd
     name: default
     namespace: argocd
   spec:
@@ -17,13 +19,21 @@ items:
 - apiVersion: argoproj.io/v1alpha1
   kind: AppProject
   metadata:
+    labels:
+      argocd.argoproj.io/instance: argocd
     name: infra
     namespace: argocd
   spec:
+    clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
     destinations:
     - name: '*'
       namespace: '*'
       server: '*'
+    namespaceResourceWhitelist:
+    - group: '*'
+      kind: '*'
     sourceRepos:
     - '*'
 kind: List
